@@ -61,28 +61,29 @@ This study is valuable for exploring how communication skills are developed and 
 ## Execution
 
 ### Preprocessing the Document
-Before querying, preprocess the document to prepare it for retrieval:
+- Before querying, preprocess the document to prepare it for retrieval:
   ```bash
   python app/main.py
 
+
 ### Query the System
-Ask questions and get answers from the document:
+- Ask questions and get answers from the document:
   ```bash
   python app/rag.py
 
 ## Exemple
 
-### Document Context
+- Document Context
 
-```bash
-"The process of communication generally involves four elements: the speaker, the receiver, the communication channel, and feedback."
+  ```bash
+  "The process of communication generally involves four elements: the speaker, the receiver, the communication channel, and feedback."
 
-## Query
+- Query
 
-```bash
-What are the four elements of the communication process?
+   ```bash
+   What are the four elements of the communication process?
 
-## Response
-```bash
-The four elements of the communication process are the speaker, the receiver, the communication channel, and feedback.
+- Response
+   ```bash
+   The four elements of the communication process are the speaker, the receiver, the communication channel, and feedback.
 
