@@ -22,7 +22,7 @@ This study is valuable for exploring how communication skills are developed and 
 
 ## Features
 - **Retrieve** specific information from the document.
-- **Generate** contextually accurate answers using a free model (e.g., Llama2, GPT2, or Mistral).
+- **Generate** contextually accurate answers using the free model (GPT2).
 - Fully containerized for deployment using Docker.
 - Easily customizable to work with any text-based document.
 
@@ -30,7 +30,7 @@ This study is valuable for exploring how communication skills are developed and 
 
 ## Requirements
 - **Docker** (tested with Docker version 27.4.0 or later).
-- Optional: **Python 3.9 or later** (for running locally without Docker).
+- Optional: **Python 3.11 or later** (for running locally without Docker).
 
 ---
 
