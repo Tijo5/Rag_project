@@ -43,39 +43,46 @@ This study is valuable for exploring how communication skills are developed and 
    git clone https://github.com/Tijo5/Rag_project.git
    cd Rag_project
 3. Build the Docker image:
+   ```bash
    docker build -t rag_project .
-4. Verify the image is built
+5. Verify the image is built
+   ```bash
    docker images
 
 ---
 
 ### Run the Container
 1. Start the container:
+   ```bash
    docker run -it rag_project
-2. The container initializes the RAG system and prompts you to ask a question.
+3. The container initializes the RAG system and prompts you to ask a question.
 
 
 ## Execution
 
 ### Preprocessing the Document
 Before querying, preprocess the document to prepare it for retrieval:
+  ```bash
   python app/main.py
 
 ### Query the System
 Ask questions and get answers from the document:
+  ```bash
   python app/rag.py
 
 ## Exemple
 
 ### Document Context
 
+```bash
 "The process of communication generally involves four elements: the speaker, the receiver, the communication channel, and feedback."
 
 ## Query
 
+```bash
 What are the four elements of the communication process?
 
 ## Response
-
+```bash
 The four elements of the communication process are the speaker, the receiver, the communication channel, and feedback.
 
