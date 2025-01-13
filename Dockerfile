@@ -1,6 +1,7 @@
+# Use a lightweight Python base image
 FROM python:3.11-slim
 
-# Set the working directory
+# Set the working directory inside the container
 WORKDIR /app
 
 # Copy the requirements file into the container
@@ -15,5 +16,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the entire project into the container
 COPY . .
 
-# Command to run the application
-CMD ["python", "app/main.py"]
+# Set the entrypoint script
+COPY entrypoint.sh /app/entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
+
+# Define the entrypoint for the container
+ENTRYPOINT ["/app/entrypoint.sh"]
